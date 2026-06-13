@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>hhhl中转聚合</title>
+<style>
+:root{--bg:#0d1117;--card:#161b22;--border:#30363d;--text:#c9d1d9;--muted:#8b949e;--accent:#58a6ff;--code-bg:#1c2128;--th-bg:#21262d;--blockquote-bd:#58a6ff;--shadow:0 1px 3px rgba(0,0,0,.4)}
+.light{--bg:#fff;--card:#f6f8fa;--border:#d0d7de;--text:#1f2328;--muted:#656d76;--accent:#0969da;--code-bg:#f0f2f4;--th-bg:#e7e9ec;--blockquote-bd:#0969da;--shadow:0 1px 3px rgba(0,0,0,.08)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei',system-ui,sans-serif;min-height:100vh;transition:background .3s,color .3s;overscroll-behavior:none;-webkit-overflow-scrolling:touch}
+.toolbar{position:sticky;top:0;z-index:100;background:var(--card);border-bottom:1px solid var(--border);padding:8px 16px;display:flex;align-items:center;gap:8px;min-height:44px;user-select:none;-webkit-user-select:none}
+.toolbar .title{font-size:13px;font-weight:600;color:var(--text);white-space:nowrap;letter-spacing:.02em}.toolbar .file-info{font-size:12px;color:var(--muted);max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1;min-width:0}.toolbar-right{display:flex;align-items:center;gap:6px;margin-left:auto}
+.btn{padding:5px 12px;border-radius:4px;font-size:12px;cursor:pointer;border:1px solid var(--border);background:var(--card);color:var(--text);transition:background .15s;white-space:nowrap;user-select:none;-webkit-user-select:none;-webkit-tap-highlight-color:transparent}.btn:hover{background:var(--th-bg)}
+.md-body{max-width:860px;margin:0 auto;padding:24px 20px 64px;line-height:1.75;font-size:15px;-webkit-text-size-adjust:100%}
+.md-body h1{font-size:1.75em;border-bottom:1px solid var(--border);padding-bottom:.25em;margin:28px 0 14px;font-weight:600}.md-body h2{font-size:1.35em;border-bottom:1px solid var(--border);padding-bottom:.2em;margin:24px 0 12px;font-weight:600}.md-body h3{font-size:1.15em;margin:20px 0 10px;font-weight:600}.md-body h4{font-size:1.05em;margin:16px 0 8px;font-weight:600}.md-body p{margin:0 0 12px}.md-body a{color:var(--accent);text-decoration:none}.md-body a:hover{text-decoration:underline}
+.md-body blockquote{border-left:3px solid var(--blockquote-bd);padding:6px 14px;margin:12px 0;color:var(--muted);font-size:.95em}.md-body code{background:var(--code-bg);padding:1.5px 5px;border-radius:3px;font-family:'SF Mono',Consolas,monospace;font-size:.88em}.md-body pre{background:var(--code-bg);padding:14px;border-radius:6px;overflow-x:auto;margin:12px 0;border:1px solid var(--border);line-height:1.5;-webkit-overflow-scrolling:touch}.md-body pre code{background:none;padding:0;font-size:.85em}
+.md-body table{border-collapse:collapse;width:100%;margin:12px 0;font-size:.9em;display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}.md-body th,.md-body td{border:1px solid var(--border);padding:6px 10px;text-align:left}.md-body th{background:var(--th-bg);font-weight:600;font-size:.88em}.md-body tr:nth-child(even){background:var(--card)}.md-body ul,.md-body ol{padding-left:1.6em;margin:6px 0 12px}.md-body li{margin:2px 0}.md-body hr{border:none;border-top:1px solid var(--border);margin:20px 0}.md-body img{max-width:100%;border-radius:4px}.md-body strong{font-weight:600}
+@media(max-width:600px){.toolbar{padding:6px 10px;gap:4px}.toolbar .title{font-size:12px}.md-body{padding:16px 12px 48px;font-size:14px}.md-body h1{font-size:1.4em}.md-body h2{font-size:1.15em}}
+</style>
+</head>
+<body>
+<div class="toolbar"><span class="title">hhhl中转聚合</span><div class="toolbar-right"><button class="btn" id="c" onclick="d()" title="切换主题">◐</button></div></div>
+<div id="a" class="md-body"></div>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+let e=`
+> 收集整理的注册邀请入口
+> 点击链接即可在新页面打开
+## 注册邀请链接
+
+以下是当前可用的注册邀请链接：
+(点击跳转)
+1. [TWGOM API](https://api.twgom.com/sign-up?aff=bkxY)
+2. [Beef Jerky 无界之地](https://beefjerky.wujiezhidi.moe:32768/register?aff=UxTB)
+3. [千禧 7988](https://qianxi7988.me/register?aff=CclN)
+4. [HHHL CCAPI](https://hhhl.ccapikey.cc.cd/sign-up?aff=JrR)
+5. [顾小墨 Site](https://guxiaomo.site/sign-up?aff=IkED)
+6. [HK Zhang API](https://api.hkzhang.cc.cd/register?aff=iZnM)
+7. [Orerspike Server](https://orerspikeserver.dpdns.org/register?aff=zBX)
+8. [Sub2API CloseAPI](https://sub2api.closeapi.top/sign-up?aff=Ff1ij)
+9. [API Yes](https://apiyes.cc.cd/sign-up?aff=3AnV)
+10. [AI2 RTOC](https://ai2.rtoc.cc/register?aff=rKAv)
+11. [Dai1bo Tech](https://www.dai1bo.tech/register?aff=YLL4CG4FN2Q3)
+12. [Cheap Host1 CheapYun](http://cheap-host1.cheapyun.com:16781/sign-up?aff=AsLu)
+13. [iKun](https://ikun.pipiliu.top/register?aff=eNiG)
+
+---
+
+提示：如果某个链接无法打开，可以稍后重试
+或确认当前网络环境是否支持该站点`;
+let a=document.getElementById('a'),b=document.getElementById('b'),c=document.getElementById('c');
+function d(){document.body.classList.toggle('light');c.textContent=document.body.classList.contains('light')?'◑':'◐';localStorage.setItem('h',document.body.classList.contains('light')?'1':'0')}
+function f(g){return g.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+if(localStorage.getItem('h')==='1'){document.body.classList.add('light');c.textContent='◑'}
+if(typeof marked!='undefined')marked.setOptions({breaks:true,gfm:true});
+a.innerHTML=typeof marked!='undefined'?marked.parse(e):'<pre>'+f(e)+'</pre>';
+a.querySelectorAll('a[href]').forEach(g=>{g.target='_blank';g.rel='noopener noreferrer'});
+b.textContent='hhhl中转聚合';
+</script>
+</body>
+</html>
