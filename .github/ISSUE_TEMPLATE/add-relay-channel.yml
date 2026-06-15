@@ -61,8 +61,7 @@ body:
     id: apac_accessibility
     attributes:
       label: 亚太地区访问情况
-      description: 请说明站点在亚太地区的访问情况，例如新加坡、日本等；
-      如有地区禁用或无法访问，请明确标注
+      description: 请说明站点在亚太地区的访问情况，例如新加坡、日本等；如有地区禁用或无法访问，请明确标注
       placeholder: |
         例如：
         - 新加坡：可访问
