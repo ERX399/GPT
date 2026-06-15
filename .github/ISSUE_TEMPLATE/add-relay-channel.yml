@@ -100,8 +100,7 @@ body:
           required: true
         - label: 我确认该站点已完善注册与登录功能
           required: true
-        - label: 我确认该站点会尽量保证亚太全区可访问；
-        如有禁用或不可访问地区，已在上方明确标注
+        - label: 我确认该站点会尽量保证亚太全区可访问；如有禁用或不可访问地区，已在上方明确标注
           required: true
         - label: 我确认提交的信息真实有效，且后续会尽量维护渠道可用性
           required: true
