@@ -1,7 +1,7 @@
 name: 新增中转站渠道
 description: 申请新增一个可用的 AI API 中转站/渠道
 title: "[新增渠道] 请填写站点名称"
-labels: ["新增渠道", "add"]
+labels: ["新增渠道", "add", "增强"]
 body:
   - type: markdown
     attributes:
