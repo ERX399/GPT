@@ -37,28 +37,15 @@ body:
       required: true
 
   - type: textarea
-    id: registration_login
-    attributes:
-      label: 注册与登录功能说明
-      description: 请说明目前注册、登录、找回密码等账号功能是否完善
-      placeholder: |
-        例如：
-        - 已支持用户注册
-        - 已支持账号密码登录
-        - 已支持邮箱验证/找回密码
-    validations:
-      required: true
-
-  - type: textarea
     id: availability
     attributes:
       label: 稳定性与可用性说明
       description: 请说明站点目前的运行状态、可用性、速度与维护情况
       placeholder: |
         例如：
-        我能保证站点可以流畅运行，并会持续维护服务可用性
+        我能保证站点主页可以流畅运行，并会持续维护服务可用性
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: server_performance
@@ -66,6 +53,7 @@ body:
       label: 服务器性能信息
       description: 请填写服务器硬件配置、带宽、线路或其他会影响稳定性的性能信息；如果带宽带有“峰值”标签，请明确标注
       placeholder: |
+        - ⚠️此条请认真填写
         例如：
         - 硬件：2H2G
         - 带宽：峰值 200M
@@ -114,8 +102,6 @@ body:
       label: 提交确认
       options:
         - label: 我确认该站点可以正常访问并流畅运行
-          required: true
-        - label: 我确认该站点已完善注册与登录功能
           required: true
         - label: 我确认已如实填写服务器性能信息；如带宽为峰值、共享或有限制，已明确标注
           required: true
