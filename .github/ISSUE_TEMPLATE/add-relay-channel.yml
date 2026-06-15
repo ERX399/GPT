@@ -1,21 +1,21 @@
-name: 新增中轉站渠道
-description: 申請新增一個可用的 AI API 中轉站/渠道
-title: "[新增渠道] 請填寫站點名稱"
+name: 新增中转站渠道
+description: 申请新增一个可用的 AI API 中转站/渠道
+title: "[新增渠道] 请填写站点名称"
 labels: ["新增渠道"]
 body:
   - type: markdown
     attributes:
       value: |
-        感謝你提交新的中轉站渠道！
+        感谢你提交新的中转站渠道！
 
-        請確認你的站點已可穩定、流暢運行，並已完善註冊與登入功能。
-        提交後我們會依照可用性、穩定性與資訊完整度進行審核。
+        请确认你的站点已可稳定、流畅运行，并已完善注册与登录功能。
+        提交后我们会依据可用性、稳定性与信息完整度进行审核。
 
   - type: input
     id: site_name
     attributes:
-      label: 站點名稱
-      description: 請填寫你的中轉站/渠道名稱
+      label: 站点名称
+      description: 请填写你的中转站/渠道名称
       placeholder: 例如：Example AI API
     validations:
       required: true
@@ -23,8 +23,8 @@ body:
   - type: input
     id: site_url
     attributes:
-      label: 站點網址
-      description: 請填寫可正常訪問的網站首頁或控制台網址
+      label: 站点网址
+      description: 请填写可正常访问的网站首页或控制台网址
       placeholder: https://example.com
     validations:
       required: true
@@ -32,8 +32,8 @@ body:
   - type: input
     id: api_endpoint
     attributes:
-      label: API 端點
-      description: 如支援 OpenAI 相容格式，請填寫 API Base URL
+      label: API 端点
+      description: 如支持 OpenAI 兼容格式，请填写 API Base URL
       placeholder: https://api.example.com/v1
     validations:
       required: false
@@ -41,8 +41,8 @@ body:
   - type: textarea
     id: supported_models
     attributes:
-      label: 支援模型/服務
-      description: 請列出目前支援的模型或服務類型
+      label: 支持模型/服务
+      description: 请列出目前支持的模型或服务类型
       placeholder: |
         - gpt-4o
         - gpt-4o-mini
@@ -55,56 +55,56 @@ body:
     id: features
     attributes:
       label: 渠道特色
-      description: 請簡要介紹你的站點特色、優勢或適合使用的場景
+      description: 请简要介绍你的站点特色、优势或适合使用的场景
       placeholder: |
         例如：
-        - 支援 OpenAI 相容 API
-        - 支援多模型切換
-        - 延遲低、穩定性高
-        - 提供免費額度/測試額度
+        - 支持 OpenAI 兼容 API
+        - 支持多模型切换
+        - 延迟低、稳定性高
+        - 提供免费额度/测试额度
     validations:
       required: false
 
   - type: textarea
     id: registration_login
     attributes:
-      label: 註冊與登入功能說明
-      description: 請說明目前註冊、登入、找回密碼等帳號功能是否完善
+      label: 注册与登录功能说明
+      description: 请说明目前注册、登录、找回密码等账号功能是否完善
       placeholder: |
         例如：
-        - 已支援使用者註冊
-        - 已支援帳號密碼登入
-        - 已支援郵箱驗證/找回密碼
+        - 已支持用户注册
+        - 已支持账号密码登录
+        - 已支持邮箱验证/找回密码
     validations:
       required: true
 
   - type: textarea
     id: availability
     attributes:
-      label: 穩定性與可用性說明
-      description: 請說明站點目前的運行狀態、可用性、速度與維護情況
+      label: 稳定性与可用性说明
+      description: 请说明站点目前的运行状态、可用性、速度与维护情况
       placeholder: |
         例如：
-        我能保證站點可以流暢運行，並會持續維護服務可用性。
+        我能保证站点可以流畅运行，并会持续维护服务可用性。
     validations:
       required: true
 
   - type: dropdown
     id: free_trial
     attributes:
-      label: 是否提供免費測試/試用額度？
+      label: 是否提供免费测试/试用额度？
       options:
         - 是
         - 否
-        - 視情況提供
+        - 视情况提供
     validations:
       required: true
 
   - type: input
     id: contact
     attributes:
-      label: 聯絡方式
-      description: 如需審核或補充資訊，請留下可聯絡方式
+      label: 联系方式
+      description: 如需审核或补充信息，请留下可联系方式
       placeholder: Telegram / Email / Discord / GitHub
     validations:
       required: false
@@ -112,13 +112,13 @@ body:
   - type: checkboxes
     id: confirmations
     attributes:
-      label: 提交確認
+      label: 提交确认
       options:
-        - label: 我確認該站點可以正常訪問並流暢運行
+        - label: 我确认该站点可以正常访问并流畅运行
           required: true
-        - label: 我確認該站點已完善註冊與登入功能
+        - label: 我确认该站点已完善注册与登录功能
           required: true
-        - label: 我確認提交的資訊真實有效，且後續會盡量維護渠道可用性
+        - label: 我确认提交的信息真实有效，且后续会尽量维护渠道可用性
           required: true
-        - label: 我了解若站點不可用、資訊不完整或存在風險，可能不會被收錄
+        - label: 我了解若站点不可用、信息不完整或存在风险，可能不会被收录
           required: true
