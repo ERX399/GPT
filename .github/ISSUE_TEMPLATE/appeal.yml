@@ -1,7 +1,7 @@
 name: 申诉/恢复收录
 description: 对站点被移除、未收录、标记异常等情况发起申诉
 title: "[申诉] 请填写站点名称"
-labels: ["申诉", "appeal"]
+labels: ["申诉", "appeal", "ERROR"]
 body:
   - type: markdown
     attributes:
