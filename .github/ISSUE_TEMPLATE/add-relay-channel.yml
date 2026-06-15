@@ -29,42 +29,6 @@ body:
     validations:
       required: true
 
-  - type: input
-    id: api_endpoint
-    attributes:
-      label: API 端点
-      description: 如支持 OpenAI 兼容格式，请填写 API Base URL
-      placeholder: https://api.example.com/v1
-    validations:
-      required: false
-
-  - type: textarea
-    id: supported_models
-    attributes:
-      label: 支持模型/服务
-      description: 请列出目前支持的模型或服务类型
-      placeholder: |
-        - gpt-4o
-        - gpt-4o-mini
-        - claude-3.5-sonnet
-        - gemini
-    validations:
-      required: false
-
-  - type: textarea
-    id: features
-    attributes:
-      label: 渠道特色
-      description: 请简要介绍你的站点特色、优势或适合使用的场景
-      placeholder: |
-        例如：
-        - 支持 OpenAI 兼容 API
-        - 支持多模型切换
-        - 延迟低、稳定性高
-        - 提供免费额度/测试额度
-    validations:
-      required: false
-
   - type: textarea
     id: registration_login
     attributes:
@@ -85,7 +49,7 @@ body:
       description: 请说明站点目前的运行状态、可用性、速度与维护情况
       placeholder: |
         例如：
-        我能保证站点可以流畅运行，并会持续维护服务可用性。
+        我能保证站点可以流畅运行，并会持续维护服务可用性
     validations:
       required: true
 
@@ -105,7 +69,7 @@ body:
     attributes:
       label: 联系方式
       description: 如需审核或补充信息，请留下可联系方式
-      placeholder: Telegram / Email / Discord / GitHub
+      placeholder: Telegram / GitHub
     validations:
       required: false
 
