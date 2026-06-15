@@ -1,5 +1,5 @@
 name: 新增中轉站渠道
-about: 申請新增一個可用的 AI API 中轉站/渠道
+description: 申請新增一個可用的 AI API 中轉站/渠道
 title: "[新增渠道] 請填寫站點名稱"
 labels: ["新增渠道"]
 body:
